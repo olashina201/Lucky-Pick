@@ -4,6 +4,7 @@ import Banner from './components/Banner';
 import About from './components/About';
 import Services from './components/Services';
 import Lucky from './components/Lucky';
+import Contact from './components/Contact';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Services/>
       <Lucky />
+      <Contact />
     </>
   );
 }
