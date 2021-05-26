@@ -36,7 +36,10 @@ function Lucky() {
                 <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
                   <div class="showed-content">
                     <img src={bitmap} alt="" />
-                     <h4>23-65-87-66-09</h4>
+                    <p>Draw #1 - Fe-23-2014</p>
+                     <h4>01-02-14-18-24</h4>
+                     <p>Multiplier</p>
+                     <p>2</p>
                   </div>
                 </div>
               </a>
