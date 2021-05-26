@@ -1,4 +1,10 @@
 import React from 'react'
+import '../vendor/bootstrap/css/bootstrap.min.css'
+import '../assets/css/fontawesome.css'
+import '../assets/css/templatemo-space-dynamic.css'
+import '../assets/css/animated.css'
+//import '../assets/css/owl.css'
+
 
 function NavBar() {
     return (
