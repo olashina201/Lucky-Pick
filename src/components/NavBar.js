@@ -20,7 +20,7 @@ function NavBar() {
                         <a href="index.html" className="logo">
                         <h4>Lucky<span>Pick</span></h4>
                         </a>
-                        <ul className="nav">
+                        <ul className="nav" style={{display: nav ? 'block': 'none'}}>
                             <li className="scroll-to-section"><a href="#top" className="active">Home</a></li>
                             <li className="scroll-to-section"><a href="#about">About Us</a></li>
                             <li className="scroll-to-section"><a href="#services">Winners</a></li>
