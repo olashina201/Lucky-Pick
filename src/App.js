@@ -13,11 +13,9 @@ function App() {
     <>
       <NavBar />
       <Banner />
-      <About />
-      <Services/>
       <Lucky />
       <Contact />
-      <App />
+      <Footer />
     </>
   );
 }

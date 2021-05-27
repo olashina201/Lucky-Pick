@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../vendor/bootstrap/css/bootstrap.min.css'
 import '../assets/css/fontawesome.css'
 import '../assets/css/templatemo-space-dynamic.css'
@@ -7,25 +7,28 @@ import '../assets/css/animated.css'
 
 
 function NavBar() {
+    const [nav, setNav] = useState(false)
+
+    const toggle = () => {setNav(!nav)}
+
     return (
-        <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                    <nav class="main-nav">
-                        <a href="index.html" class="logo">
+        <header className="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+            <div className="container">
+                <div className="row">
+                    <div className="col-12">
+                    <nav className="main-nav">
+                        <a href="index.html" className="logo">
                         <h4>Lucky<span>Pick</span></h4>
                         </a>
-                        <ul class="nav">
-                        <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-                        <li class="scroll-to-section"><a href="#about">About Us</a></li>
-                        <li class="scroll-to-section"><a href="#services">Winners</a></li>
-                        <li class="scroll-to-section"><a href="#portfolio">Lucky-Pick</a></li>
-                        <li class="scroll-to-section"><a href="#blog">Super Lotto</a></li> 
-                        <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
-                        <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> 
+                        <ul className="nav">
+                            <li className="scroll-to-section"><a href="#top" className="active">Home</a></li>
+                            <li className="scroll-to-section"><a href="#about">About Us</a></li>
+                            <li className="scroll-to-section"><a href="#services">Winners</a></li>
+                            <li className="scroll-to-section"><a href="#portfolio">Lucky-Pick</a></li>
+                            <li className="scroll-to-section"><a href="#contact">Message Us</a></li> 
+                            <li className="scroll-to-section"><div className="main-red-button"><a href="#contact">Contact Now</a></div></li> 
                         </ul>        
-                        <a class='menu-trigger'>
+                        <a className='menu-trigger' onClick={toggle}>
                             <span>Menu</span>
                         </a>
                     </nav>
