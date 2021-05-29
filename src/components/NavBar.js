@@ -23,7 +23,7 @@ function NavBar() {
                         </Link>
                         <ul className="nav" style={{display: nav ? 'block': 'none'}}>
                             <li className="scroll-to-section"><Link to="/" className="active">Home</Link></li>
-                            <li className="scroll-to-section"><a href="#about">About Us</a></li>
+                            <li className="scroll-to-section"><Link to="/about">About</Link></li>
                             <li className="scroll-to-section"><a href="#services">Winners</a></li>
                             <li className="scroll-to-section"><a href="#portfolio">Lucky-Pick</a></li>
                             <li className="scroll-to-section"><a href="#contact">Message Us</a></li> 
