@@ -19,7 +19,7 @@ function About() {
                         <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
                             <div class="section-heading">
                                 <h2>About Lucky Pick</h2>
-                                <p></p>
+                                <p>lorem</p>
                             </div>
                         </div>
                     </div>
