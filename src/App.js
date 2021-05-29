@@ -6,17 +6,20 @@ import Services from './components/Services';
 import Lucky from './components/Lucky';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Admin from './pages/Admin'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 
 function App() {
   return (
-    <>
+    <Switch>
       <NavBar />
       <Banner />
       <Lucky />
       <Contact />
       <Footer />
-    </>
+      <Route path="/admin" component={Admin} />
+    </Switch>
   );
 }
 
