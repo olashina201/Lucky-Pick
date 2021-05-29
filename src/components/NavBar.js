@@ -18,11 +18,11 @@ function NavBar() {
                 <div className="row">
                     <div className="col-12">
                     <nav className="main-nav">
-                        <a href="index.html" className="logo">
-                        <h4>Lucky<span>Pick</span></h4>
-                        </a>
+                        <Link to="/" className="logo">
+                            <h4>Lucky<span>Pick</span></h4>
+                        </Link>
                         <ul className="nav" style={{display: nav ? 'block': 'none'}}>
-                            <li className="scroll-to-section"><a href="#top" className="active">Home</a></li>
+                            <li className="scroll-to-section"><Link to="/" className="active">Home</Link></li>
                             <li className="scroll-to-section"><a href="#about">About Us</a></li>
                             <li className="scroll-to-section"><a href="#services">Winners</a></li>
                             <li className="scroll-to-section"><a href="#portfolio">Lucky-Pick</a></li>
