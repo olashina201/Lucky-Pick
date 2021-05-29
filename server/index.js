@@ -1,10 +1,10 @@
 import express from 'express'
-const app = express()
-const port = 5000
+import router from './routes/lucky.js'
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+const app = express()
+const port = 5000;
+
+app.use('/', router);
 
 app.listen(port, () => {
   console.log(`App running on port: ${port}`)
