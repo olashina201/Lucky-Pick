@@ -2,6 +2,7 @@ import React from 'react'
 import bitmap from '../assets/images/lucky pick bitmap.jpg'
 
 function Lucky() {
+
     return (
         <div id="portfolio" className="our-portfolio section">
         <div className="container">
