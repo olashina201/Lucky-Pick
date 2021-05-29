@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import contact from '../assets/images/contact-decoration.png'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
 
 function Admin() {
+    const [number, setNumber] = useState(null)
+    const [multiplier, setMultiplier] = useState(null)
+
+    const handleSubmit = () => {
+        console.log(number, multiplier)
+    }
+
     return (
         <div>
             <NavBar/>
@@ -19,26 +26,26 @@ function Admin() {
                 </div>
                 </div>
                 <div className="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                <form id="contact" action="" method="post">
+                <form id="contact" action="" method="" onSubmit={handleSubmit}>
                     <div className="row">
                     <div className="col-lg-6">
                         <fieldset>
-                        <input type="number" name="name" id="name" placeholder="lucky Numbers" autocomplete="on" required />
+                        <input type="number" name="name" id="name" value={number} onChange={e => setNumber(e.target.value)} placeholder="lucky Numbers" autocomplete="on" required />
                         </fieldset>
                     </div>
                     <div className="col-lg-6">
                         <fieldset>
-                        <input type="number" name="surname" id="surname" placeholder="Multiplier" autocomplete="on" required />
+                        <input type="number" name="surname" id="surname" value={multiplier} onChange={e => setMultiplier(e.target.value)} placeholder="Multiplier" autocomplete="on" required />
                         </fieldset>
                     </div>
                     <div className="col-lg-12">
                         <fieldset>
-                        <input type="date" name="email" id="email"  placeholder="Date" required="" />
+                        <input type="date" name="email" id="email"  placeholder="Date" />
                         </fieldset>
                     </div>
                     <div className="col-lg-12">
                         <fieldset>
-                        <input type="file" name="email" id="email"  placeholder="Date" required="" />
+                        <input type="file" name="email" id="email"  placeholder="Date" />
                         </fieldset>
                     </div>
                     <div className="col-lg-12">

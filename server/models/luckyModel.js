@@ -9,6 +9,6 @@ const luckySchema = mongoose.Schema({
 });
 
 
-const model = mongoose.model("smartphones", luckySchema);
+const model = mongoose.model("lucky", luckySchema);
 
 module.exports = model;
