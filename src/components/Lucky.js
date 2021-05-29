@@ -116,58 +116,6 @@ function Lucky() {
                 </div>
               </a>
             </div>
-            <div className="col-lg-3 col-sm-6">
-              <a href="#">
-                <div className="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                  <div className="showed-content">
-                    <img src={bitmap} alt="" />
-                    <p>Draw #1 - Fe-23-2014</p>
-                     <h4>01-02-14-18-24</h4>
-                     <p>Multiplier</p>
-                     <p>2</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="col-lg-3 col-sm-6">
-              <a href="#">
-                <div className="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                  <div className="showed-content">
-                    <img src={bitmap} alt="" />
-                    <p>Draw #1 - Fe-23-2014</p>
-                     <h4>01-02-14-18-24</h4>
-                     <p>Multiplier</p>
-                     <p>2</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="col-lg-3 col-sm-6">
-              <a href="#">
-                <div className="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                  <div className="showed-content">
-                    <img src={bitmap} alt="" />
-                    <p>Draw #1 - Fe-23-2014</p>
-                     <h4>01-02-14-18-24</h4>
-                     <p>Multiplier</p>
-                     <p>2</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div className="col-lg-3 col-sm-6">
-              <a href="#">
-                <div className="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                  <div className="showed-content">
-                    <img src={bitmap} alt="" />
-                    <p>Draw #1 - Fe-23-2014</p>
-                     <h4>01-02-14-18-24</h4>
-                     <p>Multiplier</p>
-                     <p>2</p>
-                  </div>
-                </div>
-              </a>
-            </div>
           </div>
         </div>
       </div>
