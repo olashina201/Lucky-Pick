@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import '../vendor/bootstrap/css/bootstrap.min.css'
 import '../assets/css/fontawesome.css'
 import '../assets/css/templatemo-space-dynamic.css'
@@ -26,6 +27,7 @@ function NavBar() {
                             <li className="scroll-to-section"><a href="#services">Winners</a></li>
                             <li className="scroll-to-section"><a href="#portfolio">Lucky-Pick</a></li>
                             <li className="scroll-to-section"><a href="#contact">Message Us</a></li> 
+                            <li className="scroll-to-section"><Link to="/admin">Admin</Link></li> 
                             <li className="scroll-to-section"><div className="main-red-button"><a href="#contact">Contact Now</a></div></li> 
                         </ul>        
                         <a className='menu-trigger' onClick={toggle}>
