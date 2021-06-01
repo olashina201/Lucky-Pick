@@ -3,8 +3,8 @@ export default (lucky = [], action) => {
         case 'FETCH_ALL':
             return action.payload;
         case 'CREATE':
-            return lucky;
+            return [...lucky, action.payload]
         default:
-            returnlucky
+            return lucky
     }
 }

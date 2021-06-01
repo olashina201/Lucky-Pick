@@ -5,9 +5,18 @@ import * as api from '../api';
 export const getLucky = () => async (dispatch) => {
     try {
         const { data } = await api.fetchLucky();
-        diapatch({ type: 'FETCH_ALL', payload: data })
+        dispatch({ type: 'FETCH_ALL', payload: data })
     } catch (error) {
         console.log(error.message)
     }
 
+}
+
+export const createLucky = (lucky) => async (dispatch) => {
+    try {
+        const { data } = await api.createLucky(lucky);
+        dispatch( { type: 'CREATE', payload: data } )
+    } catch (error) {
+        console.log(error);
+    }
 }

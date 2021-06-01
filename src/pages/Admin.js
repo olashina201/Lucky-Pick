@@ -2,13 +2,21 @@ import React, {useState} from 'react'
 import contact from '../assets/images/contact-decoration.png'
 import NavBar from '../components/NavBar'
 import Footer from '../components/Footer'
+import { useDispatch } from 'react-redux' 
+import {  createLucky } from '../actions/lucky'
 
 function Admin() {
-    const [number, setNumber] = useState(null)
-    const [multiplier, setMultiplier] = useState(null)
+    const [luckyData, setLuckyData] = useState({
+        luckyId: null,
+        number: null,
+        multiplier: null,
+        date: null,
+    });
+    const dispatch = useDispatch()
 
-    const handleSubmit = () => {
-        console.log(number, multiplier)
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        dispatch(createLucky(luckyData));
     }
 
     return (
@@ -26,26 +34,26 @@ function Admin() {
                 </div>
                 </div>
                 <div className="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
-                <form id="contact" action="" method="" onSubmit={handleSubmit}>
+                <form id="contact" onSubmit={handleSubmit}>
                     <div className="row">
                     <div className="col-lg-6">
                         <fieldset>
-                        <input type="number" name="name" id="name" value={number} onChange={e => setNumber(e.target.value)} placeholder="lucky Numbers" autocomplete="on" required />
+                        <input type="number" name="name" id="name" value={luckyData.luckyId} onChange={e => setLuckyData({...luckyData, luckyId: e.target.value})} placeholder="id number" required />
                         </fieldset>
                     </div>
                     <div className="col-lg-6">
                         <fieldset>
-                        <input type="number" name="surname" id="surname" value={multiplier} onChange={e => setMultiplier(e.target.value)} placeholder="Multiplier" autocomplete="on" required />
+                            <input type="number" name="surname" id="surname" value={luckyData.multiplier} onChange={e => setLuckyData({...luckyData, multiplier: e.target.value})} placeholder="Multiplier" required />
                         </fieldset>
                     </div>
                     <div className="col-lg-12">
                         <fieldset>
-                        <input type="date" name="email" id="email"  placeholder="Date" />
+                            <input type="number" name="email" id="email" value={luckyData.number} onChange={e => setLuckyData({...luckyData, number: e.target.value})}  placeholder="lucky numbers" />
                         </fieldset>
                     </div>
                     <div className="col-lg-12">
                         <fieldset>
-                        <input type="file" name="email" id="email"  placeholder="Date" />
+                            <input type="date" name="email" id="email"  placeholder="Date" />
                         </fieldset>
                     </div>
                     <div className="col-lg-12">
