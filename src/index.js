@@ -13,15 +13,15 @@ const store = createStore(reducers, compose(applyMiddleware(thunk)))
 
 
 ReactDOM.render(
-  <Provider store= { store } >
-    <BrowserRouter>
+  <BrowserRouter>
       <Switch>
+        <Provider store= { store } >
         <Route exact path = "/" component={App} />
         <Route exact path="/admin" component={Admin} />
         <Route exact path="/about" component={About} />
+        </Provider>
       </Switch>
-    </BrowserRouter>
-  </Provider>,
+    </BrowserRouter>,
   document.getElementById('root')
 );
 

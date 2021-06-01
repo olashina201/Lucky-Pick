@@ -5,7 +5,7 @@ import Lucky from './components/Lucky';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { useDispatch } from 'react-redux'
-import {getLucky} from './actions/lucky'
+import {getLuckys} from './actions/lucky'
 
 
 
@@ -14,7 +14,7 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getLucky());
+    dispatch(getLuckys());
   }, [dispatch])
 
   return (

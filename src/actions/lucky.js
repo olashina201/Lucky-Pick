@@ -2,7 +2,7 @@ import * as api from '../api';
 
 //action creators
 
-export const getLucky = () => async (dispatch) => {
+export const getLuckys = () => async (dispatch) => {
     try {
         const { data } = await api.fetchLucky();
         dispatch({ type: 'FETCH_ALL', payload: data })

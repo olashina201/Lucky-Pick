@@ -2,8 +2,11 @@ import express from 'express'
 import router from './routes/lucky.js'
 import moongoose from 'mongoose'
 import cors from 'cors'
+import bodyParser from 'body-parser'
 
 const app = express()
+app.use(bodyParser.json({ limit: "30mb", extended: true }))
+app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }))
 app.use(cors);
 const port = process.env.port || 5000;
 
@@ -16,6 +19,5 @@ moongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: tr
 
 moongoose.set('useFindAndModify', false);
 
-app.use('/lucky', router);
 app.use('/', router);
 

@@ -1,11 +1,9 @@
 import mongoose from "mongoose";
 
 const luckySchema = mongoose.Schema({
-    id: Number,
-    date: { type: Date, default: Date.now },
+    luckyId: Number,
     lucky: [Number],
-    multiply: Number,
-    image: String,
+    multiply: Number
 });
 
 

@@ -7,10 +7,9 @@ import {  createLucky } from '../actions/lucky'
 
 function Admin() {
     const [luckyData, setLuckyData] = useState({
-        luckyId: null,
-        number: null,
-        multiplier: null,
-        date: null,
+        luckyId: undefined,
+        number: [],
+        multiplier: undefined,
     });
     const dispatch = useDispatch()
 
