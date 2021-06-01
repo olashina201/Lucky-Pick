@@ -1,7 +1,12 @@
 import React from 'react'
 import bitmap from '../assets/images/lucky pick bitmap.jpg'
+import { useSelector } from 'react-redux';
 
 function Lucky() {
+
+  const lucky = useSelector((state) => state.lucky)
+
+  console.log(lucky);
 
     return (
         <div id="portfolio" className="our-portfolio section">
