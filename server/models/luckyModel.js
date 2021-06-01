@@ -9,6 +9,6 @@ const luckySchema = mongoose.Schema({
 });
 
 
-const model = mongoose.model("lucky", luckySchema);
+const luckyModel = mongoose.model("luckyModel", luckySchema);
 
-module.exports = model;
+export default luckyModel;
