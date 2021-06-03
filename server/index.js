@@ -19,5 +19,5 @@ moongoose.connect(CONNECTION_URL, {useNewUrlParser: true, useUnifiedTopology: tr
 
 moongoose.set('useFindAndModify', false);
 
-app.use('/', router);
+app.use('/lucky', router);
 

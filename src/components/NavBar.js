@@ -22,8 +22,8 @@ function NavBar() {
                             <h4>Lucky<span>Pick</span></h4>
                         </Link>
                         <ul className="nav" style={{display: nav ? 'block': 'none'}}>
-                            <li className="scroll-to-section"><Link to="/" className="active">Home</Link></li>
-                            <li className="scroll-to-section"><Link to="/about">About</Link></li>
+                            <li className="scroll-to-section"><a href="#" className="active">Home</a></li>
+                            <li className="scroll-to-section"><<a href="#">About</a></li>
                             <li className="scroll-to-section"><a href="#services">Winners</a></li>
                             <li className="scroll-to-section"><a href="#portfolio">Lucky-Pick</a></li>
                             <li className="scroll-to-section"><a href="#contact">Message Us</a></li> 
